@@ -1,0 +1,17 @@
+
+ALGORITHM Tri_Insertion
+VAR
+   i, j, v:integer;
+   tab:ARRAY_OF INTEGER[n];
+ 
+BEGIN
+ pour i de 2 a n faire
+     v := Tab[ i ] ;  
+     j := i ;        
+      Tantque Tab[ j-1 ] := v faire
+              Tab[ j ]  := Tab[ j-1 ]; 
+                j := j-1;                 
+      FinTant ;
+      Tab[ j ] := v 
+  finpour
+END 
